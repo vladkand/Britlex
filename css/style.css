@@ -1,0 +1,151 @@
+:root {
+  --bg-color: #ffffff;
+  --bg-second-color: #f5f5f5;
+  --logo-accent-color: #939393;
+  --brand-color: #263238;
+  --first-color: #8f95a5;
+  --second-color: #000000;
+  --btn-bg-color: #263238;
+  --price-first-color: #263238;
+  --price-last-color: #546269;
+  --hover-color: tomato;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--first-color);
+  font-family: 'Lucida Sans', serif;
+    /* font-family: impact; */
+
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.section {
+  border-top: 1px solid red;
+}
+
+.title {
+  font-size: 48px;
+  color: var(--second-color);
+}
+.pretitle {
+  font-size: 30px;
+  color: var(--brand-color);
+}
+.button{
+  font-family: inherit;
+  cursor: pointer;
+}
+/* .btn{
+  background-color: var(--btn-bg-color);
+} */
+/*  */
+
+.btn {
+  border-radius: 10px;
+  color: var(--bg-color);
+  background-color: var(--btn-bg-color);
+}
+.btn:hover{
+  background-color: var(--hover-color);
+}
+/*  */
+/* HEADER */
+.logo {
+  color: var(--second-color);
+  font-size: 36px;
+}
+
+.logo .accent {
+  color: var(--logo-accent-color);
+}
+.nav .link {
+  font-size: 20px;
+  color: var(--brand-color);
+}
+.nav .link:hover {
+  color: var(--hover-color);
+}
+.head-btn {
+  min-width: 312px;
+  padding: 20px 56px;
+  font-size: 20px;
+  color: var(--second-color);
+  background-color: #fff;
+}
+
+
+
+/* main */
+/* HERO  */
+.hero .title {
+  font-size: 64px;
+}
+.hero .descr {
+  font-size: 24px;
+}
+.hero .btn {
+  min-width: 426px;
+  padding: 26px 64px;
+  font-size: 36px;
+}
+
+/* SKILLS */
+.skils-item {
+  background-color: var(--bg-second-color);
+}
+.skills .descr {
+  font-size: 16px;
+}
+.skills .btn {
+  padding: 16px 63px;
+  font-size: 18px;
+}
+
+/* ABOUT US */
+.about-us .number {
+  font-size: 48px;
+  color: #2a3246;
+}
+.about-us .descr {
+  font-size: 20px;
+  color: var(--first-color);
+}
+
+/* PRICING */
+.price-descr {
+  font-size: 18px;
+  color: var(--price-last-color);
+  background-color: #eeeeee;
+}
+
+.pricing .price {
+  font-size: 24px;
+  color: var(--price-first-color);
+}
+
+/* CONTACT US */
+
+.contact .descr {
+  font-size: 20px;
+}
+.contact .btn {
+  padding: 20px 56px;
+  min-width: 312px;
+  font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer-list .link {
+  font-size: 24px;
+  color: var(--first-color);
+}
+.footer-list .link:hover {
+  color: var(--hover-color);
+}

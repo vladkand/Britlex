@@ -33,10 +33,10 @@
             >
             <ul class="nav list">
                <li><a class="link" href="">Home</a></li>
-               <li><a class="link" href="">Skills</a></li>
-               <li><a class="link" href="">About Us</a></li>
-               <li><a class="link" href="">Pricing</a></li>
-               <li><a class="link" href="">Contacts</a></li>
+               <li><a class="link" href="#skills">Skills</a></li>
+               <li><a class="link" href="#about-us">About Us</a></li>
+               <li><a class="link" href="#pricing">Pricing</a></li>
+               <li><a class="link" href="#contacts">Contacts</a></li>
             </ul>
             <button class="head-btn btn button" type="button">
                Let’s Talk
@@ -54,125 +54,135 @@
                   Any Foreign <br />
                   Language
                </h1>
-
-               <p class="descr">
-                  With our teachers who write a program for each student, you
-                  will be able to make your first sketch after the first lesson.
-               </p>
-               <button class="btn button" type="button">Get started</button
-               ><img src="./images/hero.png" alt="gerl" width="300" />
+               <div class="hero-wrapper">
+                  <p class="descr">
+                     With our teachers who write a program for each student, you
+                     will be able to make your first sketch after the first
+                     lesson.
+                  </p>
+                  <button class="btn button" type="button">Get started</button>
+               </div>
+               <img src="./images/hero.png" alt="gerl" width="300" />
             </div>
          </section>
 
          <!-- SKILLS -->
-         <section class="skills section">
+         <section class="skills section" id="skills">
             <div class="container">
                <h2 class="title centered">Skills</h2>
 
                <ul class="list">
                   <li class="skils-item">
-                     <img
-                        src="./images/skill-1.png"
-                        alt="Speaking"
-                        width="300"
-                     />
-                     <h3 class="pretitle">Speaking</h3>
-                     <p class="descr">
-                        Improve your English skills and confidence. Live classes
-                        and interactive lessons online. 20% extra free for a
-                        limited time only
-                     </p>
-                     <p class="descr">
-                        Learn English online and improve your skills through our
-                        high-quality courses and resources – all designed for
-                        adult language learners.
-                     </p>
-                     <div class="learn">
+                     <!-- Speaking -->
+                     <div class="speaking">
+                        <img
+                           src="./images/skill-1.png"
+                           alt="Speaking"
+                           width="300"
+                        />
+                        <div class="speaking-wrapper">
+                           <h3 class="pretitle">Speaking</h3>
+                           <p class="descr">
+                              Improve your English skills and confidence. Live
+                              classes and interactive lessons online. 20% extra
+                              free for a limited time only
+                           </p>
+                           <p class="descr">
+                              Learn English online and improve your skills
+                              through our high-quality courses and resources –
+                              all designed for adult language learners.
+                           </p>
+                        </div>
+
                         <a class="link-btn btn link" href="/">Learn more</a>
-                        <details>
-                           <summary class="speaking">Learn more</summary>
-                           <span class="summary"
-                              >Something small enough to escape casual notice.
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Rem vitae beatae sit soluta
-                              impedit unde quam magnam. Maiores saepe
-                              consectetur temporibus sunt.
-                           </span>
-                        </details>
                      </div>
                   </li>
+
+                  <!-- Writing -->
                   <li class="skils-item">
-                     <img
-                        src="./images/skill-2.png"
-                        alt="Writing"
-                        width="300"
-                     />
-                     <h3 class="pretitle">Writing</h3>
-                     <p class="descr">
-                        One of the most important and extensive areas of natural
-                        science, the science that studies substances, also their
-                        composition
-                     </p>
-                     <a class="link-btn btn link" href="">Learn more</a>
+                     <div class="writing">
+                        <img
+                           src="./images/skill-2.png"
+                           alt="Writing"
+                           width="300"
+                        />
+                        <h3 class="pretitle">Writing</h3>
+                        <p class="descr">
+                           One of the most important and extensive areas of
+                           natural science, the science that studies substances,
+                           also their composition
+                        </p>
+                        <a class="link-btn btn link" href="">Learn more</a>
+                     </div>
                   </li>
+
+                  <!-- Reading -->
                   <li class="skils-item">
-                     <img
-                        src="./images/skill-3.png"
-                        alt="Reading"
-                        width="300"
-                     />
-                     <h3 class="pretitle">Reading</h3>
-                     <p class="descr">
-                        Perception and response actions of the user resulting
-                        from the use and/or upcoming use of the product, system
-                        or service
-                     </p>
-                     <a class="link-btn btn link" href="/">Learn more</a>
+                     <div class="reading">
+                        <img
+                           src="./images/skill-3.png"
+                           alt="Reading"
+                           width="300"
+                        />
+                        <h3 class="pretitle">Reading</h3>
+                        <p class="descr">
+                           Perception and response actions of the user resulting
+                           from the use and/or upcoming use of the product,
+                           system or service
+                        </p>
+                        <a class="link-btn btn link" href="/">Learn more</a>
+                     </div>
                   </li>
+
+                  <!-- Listening -->
                   <li class="skils-item">
-                     <img src="./images/skill-3.png" alt="Listening" />
-                     <h3 class="pretitle">Listening</h3>
-                     <p class="descr">
-                        Here you can find activities to practise your listening
-                        skills. Listening will help you to improve your
-                        understanding
-                     </p>
-                     <a class="link-btn btn link" href="">Learn more</a>
+                     <div class="listening">
+                        <img src="./images/skill-3.png" alt="Listening" />
+                        <h3 class="pretitle">Listening</h3>
+                        <p class="descr">
+                           Here you can find activities to practise your
+                           listening skills. Listening will help you to improve
+                           your understanding
+                        </p>
+                        <a class="link-btn btn link" href="">Learn more</a>
+                     </div>
                   </li>
                </ul>
             </div>
          </section>
 
          <!-- About Us -->
-         <section class="section about-us">
-            <h2 class="title">About Us</h2>
-            <p class="descr">
-               The model offers a framework for discussing problems related to
-               the user's experience, as well as possible ways and means of
-               solving them. Application development begins at the top level
-               (strategy), where the future software product is described quite
-               abstractly from the point of view of the expectations of both
-               users and the customer.
-            </p>
-            <ul class="list">
-               <li>
-                  <span class="number">800</span>
-                  <p class="data descr">Pupils</p>
-               </li>
-               <li>
-                  <span class="number">18</span>
-                  <p class="descr">Teachers</p>
-               </li>
-               <li>
-                  <span class="number">6</span>
-                  <p class="descr">Foreign languages</p>
-               </li>
-            </ul>
-            <img src="./images/about-us.png" alt="about-us" width="300" />
+         <section class="section about-us" id="about-us">
+            <div class="container">
+               <h2 class="title">About Us</h2>
+               <p class="descr">
+                  The model offers a framework for discussing problems related
+                  to the user's experience, as well as possible ways and means
+                  of solving them. Application development begins at the top
+                  level (strategy), where the future software product is
+                  described quite abstractly from the point of view of the
+                  expectations of both users and the customer.
+               </p>
+               <ul class="list">
+                  <li>
+                     <span class="number">800</span>
+                     <p class="data descr">Pupils</p>
+                  </li>
+                  <li>
+                     <span class="number">18</span>
+                     <p class="descr">Teachers</p>
+                  </li>
+                  <li>
+                     <span class="number">6</span>
+                     <p class="descr">Foreign languages</p>
+                  </li>
+               </ul>
+               <img src="./images/about-us.png" alt="about-us" width="300" />
+            </div>
          </section>
 
          <!-- Pricing -->
-         <section class="section pricing">
+         <section class="section pricing" id="pricing">
             <h2 class="title">Pricing</h2>
             <ul class="list">
                <li>
@@ -227,7 +237,7 @@
          </section>
 
          <!-- Contact Us -->
-         <section class="section contact">
+         <section class="section contact" id="contacts">
             <h2 class="title">Contact Us</h2>
             <img
                src="./images/contact-us.png"
@@ -258,5 +268,13 @@
             <li><a class="link" href="">Cookie Policy</a></li>
          </ul>
       </footer>
+      <details>
+         <summary class="speaking">Learn more</summary>
+         <span class="summary"
+            >Something small enough to escape casual notice. Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Rem vitae beatae sit soluta
+            impedit unde quam magnam. Maiores saepe consectetur temporibus sunt.
+         </span>
+      </details>
    </body>
 </html>

@@ -35,6 +35,16 @@ p {
    margin-top: 0;
    margin-bottom: 0;
 }
+ul{
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
 
 .link {
    text-decoration: none;
@@ -70,7 +80,7 @@ padding right = 20px*/
 } */
 /*  */
 
-.link-btn{
+.link-btn {
    display: inline-block;
 }
 .btn {
@@ -83,6 +93,7 @@ padding right = 20px*/
 .btn:hover,
 .btn:focus {
    background-color: var(--hover-color);
+   color: var(--bg-color);
 }
 
 /* CONTAINER */
@@ -95,14 +106,14 @@ padding right = 20px*/
 }
 
 /* Centered */
-.centered{
+.centered {
    text-align: center;
 }
 
 /* HEADERER */
-.header{
-padding-top: 55px;
-padding-bottom: 101px;
+.header {
+   padding-top: 55px;
+   padding-bottom: 101px;
 }
 
 .logo {
@@ -122,7 +133,8 @@ padding-bottom: 101px;
    color: var(--brand-color);
 }
 .nav .link:hover,
-.nav .link:focus {
+.nav .link:focus,
+.nav .link:active {
    color: var(--hover-color);
 }
 .head-btn {
@@ -138,7 +150,7 @@ padding-bottom: 101px;
 
 /* main */
 /* HERO  */
-.hero{
+.hero {
    padding-bottom: 103px;
 }
 .hero .title {
@@ -152,6 +164,7 @@ padding-bottom: 101px;
    color: teal;
 }
 .hero .descr {
+   margin-bottom: 61px;
    font-size: 24px;
 }
 
@@ -162,7 +175,31 @@ padding-bottom: 101px;
 }
 
 /* SKILLS */
-.skills{
+/* speaking */
+.speaking * {
+   outline: 1px solid red;
+}
+.speaking {
+   padding-left: 22px;
+   padding-right: 22px;
+}
+
+.speaking-wrapper {
+}
+.speaking .pretitle {
+   margin-bottom: 5px;
+}
+/* нижний отступ кроме посл */
+.speaking-wrapper .descr:not(:last-child) {
+   margin-bottom: 24px;
+}
+/* ---- */
+
+.speaking-wrapper {
+   margin-bottom: 36px;
+}
+
+.skills {
    padding-bottom: 252px;
 }
 .skills .title {
@@ -186,29 +223,24 @@ padding-bottom: 101px;
    padding: 16px 63px;
    font-size: 18px;
 }
-.learn {
+/* .learn {
    display: flex;
    justify-content: center;
-}
-.skills summary {
-   text-align: center;
-
-   font-size: 22px;
-   font-weight: 800;
-   color: var(--hover-color);
-}
-.summary {
-   text-align: center;
-
-   font-size: 32px;
-   font-weight: 900;
-   color: red;
-   background-color: yellow;
-}
+} */
 
 /* ABOUT US */
 
+.about-us{
+   padding-bottom: 188px;
+}
+
+.about-us .title{
+   margin-bottom: 23px;
+}
+
 .about-us .descr {
+margin-bottom: 30px;
+
    font-size: 20px;
    line-height: 1.8;
 }
@@ -279,4 +311,20 @@ padding-bottom: 101px;
 }
 .footer-list .link:hover {
    color: var(--hover-color);
+}
+/* ----------- */
+.skills summary {
+   text-align: center;
+
+   font-size: 22px;
+   font-weight: 800;
+   color: var(--hover-color);
+}
+.summary {
+   text-align: center;
+
+   font-size: 32px;
+   font-weight: 900;
+   color: red;
+   background-color: yellow;
 }

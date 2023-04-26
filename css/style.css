@@ -275,20 +275,26 @@ padding right = 20px*/
    margin-right: 194px;
 }
 
-.about-us-descr .list {
+.about-us-list {
    display: flex;
    justify-content: space-between;
+}
+
+.about-us-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .about-us .title {
    margin-bottom: 23px;
 }
 
-.about-us .descr {
+.about-txt {
    margin-bottom: 30px;
 
    font-size: 20px;
-   line-height: 1.8;
+   line-height: 1.5;
 }
 .about-us .number {
    font-weight: 600;

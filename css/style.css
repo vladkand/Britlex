@@ -24,7 +24,7 @@ body {
 
    background-color: var(--bg-color);
 }
-/* reset */
+/* --- reset --- */
 h1,
 h2,
 h3,
@@ -32,12 +32,17 @@ h4,
 h5,
 h6,
 p {
-   margin-top: 0;
-   margin-bottom: 0;
+   margin: 0;
 }
-ul {
+
+ul,
+ol {
    margin: 0;
    padding: 0;
+}
+
+button {
+   cursor: pointer;
 }
 
 img {
@@ -48,15 +53,9 @@ img {
 .link {
    text-decoration: none;
 }
+
 .list {
    list-style: none;
-}
-/* container
-width = 1378px 
-padding left = 20px
-padding right = 20px*/
-
-.section {
 }
 
 .title {
@@ -67,15 +66,8 @@ padding right = 20px*/
    font-size: 30px;
    color: var(--brand-color);
 }
-.button {
-   /* ! button не наследует шрифты */
-   font-family: inherit;
-   cursor: pointer;
-}
-/* .btn{
-  background-color: var(--btn-bg-color);
-} */
-/*  */
+
+/* --- Кнопки-ссылки --- */
 
 .link-btn {
    display: inline-block;
@@ -95,12 +87,17 @@ padding right = 20px*/
 
 /* CONTAINER */
 .container {
-   width: 1600px;
+   width: 1360px;
    margin-left: auto;
    margin-right: auto;
-   padding-left: 130px;
-   padding-right: 130px;
-   outline: 2px solid teal;
+   padding-left: 11px;
+   padding-right: 11px;
+   /* outline: 2px solid teal; */
+   /* background-color: beige; */
+}
+
+.section {
+   outline: 1px solid tomato;
 }
 
 /* Centered */
@@ -110,16 +107,14 @@ padding right = 20px*/
 
 /* HEADERER */
 .header {
-   /* padding-top: 55px;
-   padding-bottom: 101px; */
+   padding-top: 55px;
+   padding-bottom: 51px;
    background-color: beige;
 }
 
 .header-box {
    display: flex;
    align-items: center;
-   padding-top: 55px;
-   padding-bottom: 51px;
 }
 
 .logo {
@@ -176,7 +171,7 @@ padding right = 20px*/
 }
 
 .hero-descr {
-   padding-top: 94px;
+   padding-top: 51px;
    margin-right: 163px;
 }
 
@@ -201,24 +196,15 @@ padding right = 20px*/
    font-size: 36px;
 }
 
-/* SKILLS */
-/* speaking */
-.skills-list {
+/* ------ */
+
+/* --- SKILLS --- */
+
+.all-skills {
    display: flex;
-   flex-wrap: wrap;
-   gap: 40px;
 }
+/* speaking */
 
-.skils-item {
-   flex-basis: calc(100% - 2 * 40 / 3);
-}
-.skils-item .speaking {
-   padding-left: 22px;
-   padding-right: 22px;
-}
-
-.speaking-wrapper {
-}
 .speaking .pretitle {
    margin-bottom: 5px;
 }
@@ -248,8 +234,6 @@ padding right = 20px*/
    font-weight: 600;
    font-size: 30px;
    /* identical to box height */
-}
-.skills .descr {
 }
 
 .skills .btn {

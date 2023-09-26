@@ -20,6 +20,8 @@
          referrerpolicy="no-referrer"
       />
       <!--  -->
+
+      <link rel="stylesheet" href="./css/common.css" />
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body>
@@ -30,16 +32,26 @@
          <div class="container">
             <div class="header-box">
                <a class="logo link" href="./index-flex.html"
-                  >Brit<span class="accent">fle</span>
+                  >Brit<span class="accent">flex</span>
                </a>
-               <ul class="nav list">
-                  <li><a class="link" href="">Home</a></li>
-                  <li><a class="link" href="#skills">Skills</a></li>
-                  <li><a class="link" href="#about-us">About Us</a></li>
-                  <li><a class="link" href="#pricing">Pricing</a></li>
-                  <li><a class="link" href="#contacts">Contacts</a></li>
+               <ul class="nav nav__list list">
+                  <li>
+                     <a class="nav__link link" href="#">Home</a>
+                  </li>
+                  <li>
+                     <a class="nav__link link" href="#skills">Skills</a>
+                  </li>
+                  <li>
+                     <a class="nav__link link" href="#about-us">About Us</a>
+                  </li>
+                  <li>
+                     <a class="nav__link link" href="#pricing">Pricing</a>
+                  </li>
+                  <li>
+                     <a class="nav__link link" href="#contacts">Contacts</a>
+                  </li>
                </ul>
-               <button class="head-btn btn button" type="button">
+               <button class="head__btn btn button" type="button">
                   Let’s Talk
                </button>
             </div>
@@ -52,23 +64,30 @@
          <section class="hero section">
             <div class="container">
                <div class="hero-box">
-                  <div class="hero-descr">
-                     <h1 class="title">
+                  <div class="hero__descr">
+                     <h1 class="hero__title title">
                         Learn <br />
                         Any Foreign <br />
                         Language
                      </h1>
-                     <p class="descr">
+                     <p class="hero__txt">
                         With our teachers who write a program for each student,
                         you will be able to make your first sketch after the
                         first lesson.
                      </p>
 
-                     <button class="btn button" type="button">
+                     <button class="hero__btn btn button" type="button">
                         Get started
                      </button>
                   </div>
-                  <img src="./images/hero.png" alt="gerl" width="300" />
+                  <div class="thumb hero__thumb">
+                     <img
+                        src="./images/hero.png"
+                        alt="gerl"
+                        width="653"
+                        height="642"
+                     />
+                  </div>
                </div>
             </div>
          </section>
@@ -145,10 +164,10 @@
          <!-- About Us -->
          <section class="section about-us" id="about-us">
             <div class="container">
-               <div class="about-us-wrapper">
-                  <div class="about-us-descr">
-                     <h2 class="title">About Us</h2>
-                     <p class="about-txt">
+               <div class="about-us__wrapper">
+                  <div class="about-us__descr">
+                     <h2 class="title about-us__title">About Us</h2>
+                     <p class="about-us__txt">
                         The model offers a framework for discussing problems
                         related to the user's experience, as well as possible
                         ways and means of solving them. Application development
@@ -157,23 +176,31 @@
                         point of view of the expectations of both users and the
                         customer.
                      </p>
-                     <ul class="about-us-list list">
+                     <ul class="about-us__list list">
                         <li class="about-us-item">
-                           <p class="number">800</p>
+                           <p class="about-us__value">800</p>
                            <p class="data descr">Pupils</p>
                         </li>
                         <li class="about-us-item">
-                           <p class="number">18</p>
+                           <p class="about-us__value">18</p>
                            <p class="descr">Teachers</p>
                         </li>
                         <li class="about-us-item">
-                           <p class="number">6</p>
-                           <p class="descr">Foreign languages</p>
+                           <p class="about-us__value">6</p>
+                           <p class="about-us__label descr">
+                              Foreign languages
+                           </p>
                         </li>
                      </ul>
                   </div>
-
-                  <img src="./images/about-us.png" alt="about-us" width="300" />
+                  <div class="thumb about-us__thumb">
+                     <img
+                        src="./images/about-us.png"
+                        alt="about-us"
+                        width="500"
+                        height="500"
+                     />
+                  </div>
                </div>
             </div>
          </section>
@@ -181,15 +208,21 @@
          <!-- Pricing -->
          <section class="section pricing" id="pricing">
             <div class="container">
-               <h2 class="title">Pricing</h2>
-               <ul class="list">
-                  <li>
-                     <img
-                        src="./images/pricing-1.png"
-                        alt="Self-study online course"
-                        width="300"
-                     />
-                     <h3 class="pretitle">Self-study online course</h3>
+               <h2 class="pricing__title title--centered title">Pricing</h2>
+               <ul class="pricing__list list">
+                  <li class="pricing__item course">
+                     <div class="thumb pricing__thumb pricing__thumb--first">
+                        <img
+                           src="./images/pricing-1.png"
+                           alt="Self-study online course"
+                           width="311"
+                           height="311"
+                        />
+                     </div>
+
+                     <h3 class="pricing__subtitle pretitle">
+                        Self-study online course
+                     </h3>
                      <p class="descr">
                         Start learning English online in live classes with
                         qualified EC teachers and students from all over the
@@ -200,13 +233,19 @@
                         <span class="price">£5.99</span> per month
                      </p>
                   </li>
-                  <li>
-                     <img
-                        src="./images/pricing-2.png"
-                        alt="Live online classes"
-                        width="300"
-                     />
-                     <h3 class="pretitle">Live online classes</h3>
+                  <li class="pricing__item pricing__item--mid">
+                     <div class="thumb pricing__thumb pricing__thumb--mid">
+                        <img
+                           src="./images/pricing-2.png"
+                           alt="Live online classes"
+                           width="390"
+                           height="283"
+                        />
+                     </div>
+
+                     <h3 class="pricing__subtitle pretitle">
+                        Live online classes
+                     </h3>
                      <p class="descr">
                         Interactive group classes with expert teachers. Free
                         7-day trial
@@ -216,14 +255,20 @@
                         <span class="price">£12.99</span> per month
                      </p>
                   </li>
-                  <li>
-                     <img
-                        src="./images/pricing-3.png"
-                        alt="Personal Tuition"
-                        title="image"
-                        width="300"
-                     />
-                     <h3 class="pretitle">Personal Tuition</h3>
+                  <li class="pricing__item">
+                     <div class="thumb pricing__thumb pricing__thumb--last">
+                        <img
+                           src="./images/pricing-3.png"
+                           alt="Personal Tuition"
+                           title="image"
+                           width="340"
+                           height="340"
+                        />
+                     </div>
+
+                     <h3 class="pricing__subtitle pretitle">
+                        Personal Tuition
+                     </h3>
                      <p class="descr">
                         Online one-to-one English tutoring – enjoy our first
                         session for only $1

@@ -210,7 +210,7 @@
             <div class="container">
                <h2 class="pricing__title title--centered title">Pricing</h2>
                <ul class="pricing__list list">
-                  <li class="pricing__item course">
+                  <li class="pricing__item course-box">
                      <div class="thumb pricing__thumb pricing__thumb--first">
                         <img
                            src="./images/pricing-1.png"
@@ -220,20 +220,22 @@
                         />
                      </div>
 
-                     <h3 class="pricing__subtitle pretitle">
+                     <h3
+                        class="pricing__subtitle pretitle pricing__subtitle--first"
+                     >
                         Self-study online course
                      </h3>
-                     <p class="descr">
+                     <p class="pricing__txt txt">
                         Start learning English online in live classes with
                         qualified EC teachers and students from all over the
                         world.
                      </p>
 
-                     <p class="price-descr">
-                        <span class="price">£5.99</span> per month
+                     <p class="pricing__price txt price pricing__price--first">
+                        <span class="price__value">£5.99</span> per month
                      </p>
                   </li>
-                  <li class="pricing__item pricing__item--mid">
+                  <li class="pricing__item pricing__item--mid classes-box">
                      <div class="thumb pricing__thumb pricing__thumb--mid">
                         <img
                            src="./images/pricing-2.png"
@@ -243,19 +245,21 @@
                         />
                      </div>
 
-                     <h3 class="pricing__subtitle pretitle">
+                     <h3
+                        class="pricing__subtitle pretitle pricing__subtitle--mid"
+                     >
                         Live online classes
                      </h3>
-                     <p class="descr">
+                     <p class="pricing__txt txt">
                         Interactive group classes with expert teachers. Free
                         7-day trial
                      </p>
 
-                     <p class="price-descr">
-                        <span class="price">£12.99</span> per month
+                     <p class="pricing__price txt price pricing__price--mid">
+                        <span class="price__value">£5.99</span> per month
                      </p>
                   </li>
-                  <li class="pricing__item">
+                  <li class="pricing__item tuition-box">
                      <div class="thumb pricing__thumb pricing__thumb--last">
                         <img
                            src="./images/pricing-3.png"
@@ -266,42 +270,57 @@
                         />
                      </div>
 
-                     <h3 class="pricing__subtitle pretitle">
+                     <h3
+                        class="pricing__subtitle pretitle pricing__subtitle--last"
+                     >
                         Personal Tuition
                      </h3>
-                     <p class="descr">
+                     <p class="pricing__txt txt">
                         Online one-to-one English tutoring – enjoy our first
                         session for only $1
                      </p>
-                     <p class="price-descr">
-                        <span class="price"> £12.99</span> per month
+
+                     <p class="pricing__price txt price pricing__price--last">
+                        <span class="price__value">£5.99</span> per month
                      </p>
                   </li>
                </ul>
             </div>
          </section>
 
-         <!-- Contact Us -->
-         <section class="section contact" id="contacts">
+         <!-- ===== Contact Us ===== -->
+         <section class="section contact">
             <div class="container">
-               <h2 class="title">Contact Us</h2>
-               <img
-                  src="./images/contact-us.png"
-                  alt="Contact Us"
-                  title="Contact Us"
-                  width="300"
-               />
-               <p class="descr">
-                  Discover your current English level by taking our free online
-                  English test. Sign up to our newsletter for learning tips and
-                  free resources
-               </p>
-               <form action="">
-                  <p>
-                     <input class="form-txt" type="text" placeholder="mmmmm" />
-                     <button class="btn button" type="submit">Subscribe</button>
-                  </p>
-               </form>
+               <div class="contact-wrapper">
+                  <div class="contact__thumb">
+                     <img
+                        src="./images/contact-us.png"
+                        width="477"
+                        height="479"
+                        alt="contact-us"
+                     />
+                  </div>
+                  <div class="contact__dscr">
+                     <h2 class="title contact__title">Contact Us</h2>
+                     <p class="contact__txt txt">
+                        Discover your current English level by taking our free
+                        online English test.Sign up to our newsletter for
+                        learning tips and free resources
+                     </p>
+                     <form action="#" class="contact__form subscribe">
+                        <label class="subscribe__label">
+                           <input
+                              class="subscribe__input"
+                              type="text"
+                              placeholder="Enter Your E-mail"
+                           />
+                        </label>
+                        <button class="btn subscribe__btn" type="submit">
+                           Subscribe
+                        </button>
+                     </form>
+                  </div>
+               </div>
             </div>
          </section>
       </main>

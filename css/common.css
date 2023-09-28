@@ -1,5 +1,5 @@
 /*  */
-:root {
+/* :root {
    --first-color: #8f95a5;
    --brand-color: #263238;
    --bg-color: #ffffff;
@@ -15,7 +15,7 @@
 
    --btn-bg-color: #263238;
    --hover-color: tomato;
-}
+} */
 
 /*  */
 
@@ -84,8 +84,8 @@ img {
 
 .btn {
    display: inline-block;
-   border-radius: 10px;
 
+   border-radius: 10px;
    color: var(--bg-color);
    background-color: var(--btn-bg-color);
 }
@@ -105,7 +105,7 @@ img {
 
    /* background-color: beige; */
 
-   outline: 2px solid teal;
+   /* outline: 2px solid teal; */
 }
 
 /* Centered */

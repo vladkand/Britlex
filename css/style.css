@@ -1,3 +1,23 @@
+:root {
+   --first-color: #8f95a5;
+   --brand-color: #263238;
+   --bg-color: #ffffff;
+   --bg-second-color: #f5f5f5;
+   --bg-price-color: #eeeeee;
+   --logo-accent-color: #939393;
+
+   --title-color: #000000;
+   --second-color: #263238;
+
+   --decor-color: #2a3246;
+   --decor-second-color: #8f95a5;
+
+   --btn-bg-color: #263238;
+   --hover-color: tomato;
+}
+
+/*  */
+
 /* HEADER*/
 .header {
    padding-top: 55px;
@@ -305,6 +325,12 @@
 }
 
 /* ===== CONTACT US ===== */
+
+/* 138px */
+.contact {
+   padding-bottom: 138px;
+}
+
 .contact-wrapper {
    display: flex;
    /* justify-content: space-between; */
@@ -314,15 +340,11 @@
    flex-basis: 477px;
    height: 479px;
    flex-shrink: 0;
-
-   /* outline: 1px solid red; */
 }
 
 .contact__dscr {
    margin-left: 92px;
    padding-top: 38px;
-
-   /* outline: 1px solid red; */
 }
 
 .contact__txt {
@@ -342,34 +364,76 @@
    border: 1px solid var(--first-color);
 }
 
+.subscribe__input::placeholder {
+   /* color: #8f95a5; */
+
+   font-size: 16px;
+
+   line-height: normal;
+}
+
 .subscribe__btn {
    margin-left: 12px;
    min-width: 264px;
 }
+
 /* FOOTER */
 
-.footer-list .link {
+.footer {
+   /* display: flex; */
+}
+
+.footer__container {
+   display: flex;
+   align-items: center;
+}
+
+.footer__list {
+   display: flex;
+   margin-left: auto;
+}
+
+.footer__item {
+   display: flex;
+   align-items: center;
+}
+
+.footer__link {
+   display: block;
+   align-items: center;
+   padding-top: 56px;
+   padding-bottom: 57px;
    font-size: 24px;
    letter-spacing: 0.02em;
 
    color: var(--first-color);
 }
-.footer-list .link:hover {
+
+/* .footer__link::after {
+   content: '';
+   display: block;
+   width: 6px;
+   height: 6px;
+   background-color: var(--first-color);
+   border-radius: 50%;
+} */
+
+.footer__item + .footer__item::before {
+   content: '';
+   display: block;
+
+   width: 6px;
+   height: 6px;
+   margin-right: 6px;
+   background-color: var(--first-color);
+   border-radius: 50%;
+}
+
+.footer__item + .footer__item {
+   margin-left: 6px;
+}
+
+.footer__list .link:hover {
    color: var(--hover-color);
 }
 /* ----------- */
-.skills summary {
-   text-align: center;
-
-   font-size: 22px;
-   font-weight: 800;
-   color: var(--hover-color);
-}
-.summary {
-   text-align: center;
-
-   font-size: 32px;
-   font-weight: 900;
-   color: red;
-   background-color: yellow;
-}

@@ -71,9 +71,14 @@ img {
    color: var(--title-color);
 }
 
-.pretitle {
+.pretitle,
+.subtitle {
    font-size: 30px;
    color: var(--brand-color);
+   /*  */
+
+   font-weight: 600;
+   line-height: 1.6; /* 160% */
 }
 
 /* --- Кнопки-ссылки --- */
@@ -108,7 +113,24 @@ img {
    /* outline: 2px solid teal; */
 }
 
+.title {
+   color: #000;
+
+   font-size: 48px;
+
+   font-weight: 600;
+   line-height: 1.67; /* 166.667% */
+}
+
 /* Centered */
 .title--centered {
    text-align: center;
+}
+
+.subtitle {
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 600;
+
+   /* 266.667% */
 }

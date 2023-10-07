@@ -156,8 +156,9 @@
    row-gap: 20px;
 
    grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
    grid-template-areas:
+      'speaking writing reading'
       'speaking writing reading'
       'speaking listening listening';
 }
@@ -190,6 +191,9 @@
 
 .listening {
    grid-area: listening;
+
+   display: flex;
+   flex-direction: row-reverse;
 
    /* display: flex;
    flex-direction: row-reverse;

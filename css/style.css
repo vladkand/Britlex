@@ -133,30 +133,23 @@
    padding-bottom: 252px;
 }
 
-.skills .container {
-   outline: 1px solid blue;
+.skills__title {
+   /* margin-bottom: 92px; */
 }
 
 .skills__subtitle {
    outline: 1px solid;
 }
 
-.skills__title {
-   margin-bottom: 92px;
-}
-
 .skills__list {
-   /* position: relative;
-   display: flex;
-   justify-content: flex-end;
-   flex-wrap: wrap; */
+   margin-top: 92px;
 
    display: grid;
    column-gap: 30px;
    row-gap: 20px;
 
    grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
    grid-template-areas:
       'speaking writing reading'
       'speaking writing reading'
@@ -164,21 +157,14 @@
 }
 
 .skills__item {
+   padding-left: 18px;
    background-color: var(--bg-second-color);
 
    outline: 1px solid red;
 }
 
-/* === элементы SKILLS ==== */
 .speaking {
    grid-area: speaking;
-
-   /* position: absolute;
-   width: calc((100% / 3 + 15px));
-   height: 100%;
-   padding-top: 36px;
-   top: 0;
-   left: 0; */
 }
 
 .writing {
@@ -194,40 +180,46 @@
 
    display: flex;
    flex-direction: row-reverse;
-
-   /* display: flex;
-   flex-direction: row-reverse;
-   justify-items: flex-end;
-   flex-basis: 858px;
-   flex-grow: 0;
-   padding-top: 43px;
-   padding-right: 29px;
-   padding-bottom: 44px; */
-}
-
-.speakings__img-box {
-   margin-left: auto;
-   margin-right: auto;
-   width: 390px;
-   height: 390px;
-}
-
-/* .skills__item:not(:last-child) {
-   display: flex;
-   flex-direction: column;
    justify-content: space-between;
-   padding-left: 18px;
+   /* align-items: center; */
+   padding-right: 29px;
+   padding-bottom: 44px;
+}
 
-   flex-basis: calc((100% - 108px) / 3);
-} */
+/* === элементы SKILLS ==== */
+.thumb img {
+   outline: 1px solid;
+}
 
 .skills__subtitle {
    line-height: 2.67;
 }
 
-.skills__txt:nth-child(3) {
-   /* margin-top: 24px;
-   background-color: green; */
+.skills__txt {
+   font-size: 16px;
+}
+
+/* speaking */
+
+.speakings__thumb {
+   /* margin-left: auto; */
+   /* margin-right: auto; */
+   width: 100%;
+   height: 390px;
+}
+
+.speakings__thumb img {
+   display: block;
+   height: 100%;
+   width: 100%;
+
+   object-fit: scale-down;
+   object-position: left top;
+}
+
+.speaking__dscr-box {
+   margin-top: 4px;
+   padding-right: 58px;
 }
 
 .skills__txt + .skills__txt {
@@ -235,33 +227,69 @@
    background-color: green;
 }
 
+.speaking__btn {
+   margin-top: 50px;
+}
+
+/* Writing */
+.writing {
+   padding-bottom: 44px;
+}
+.writing__thumb {
+   /*  */
+   width: 100%;
+   height: 255px;
+   /* padding-left: 118px; */
+}
+
+.writing__thumb img {
+   width: 100%;
+   object-fit: scale-down;
+   object-position: right top;
+}
+
+.writing__dscr-box {
+   padding-right: 51px;
+}
+
+/* Reading */
+.reading__thumb {
+   width: 100%;
+   height: 247px;
+}
+
+.reading__thumb img {
+   width: 100%;
+   height: 100%;
+   object-fit: scale-down;
+   object-position: left top;
+}
+
+.reading__dscr-box {
+   margin-top: 8px;
+}
+
+/*  */
+
+/* Listening */
 .listening__dscr-box {
    /*  */
    flex-basis: 50%;
+   padding-top: 53px;
+   flex-shrink: 0;
+
+   outline: 1px solid teal;
 }
 
-.skills__btn {
-   margin-top: 45px;
-}
-/* speaking */
-
-.speaking .pretitle {
-   margin-bottom: 5px;
-}
-/* нижний отступ кроме посл */
-.speaking-wrapper .descr:not(:last-child) {
-   margin-bottom: 24px;
-}
-/* ---- */
-
-.speaking-wrapper {
-   margin-bottom: 36px;
+.listening__thumb {
+   /*  */
+   /* margin-left: auto; */
+   /* width: 100%; */
+   height: 100%;
+   padding-top: 44px;
 }
 
-.skills__btn {
-   padding: 16px 63px;
-   font-size: 18px;
-}
+/*  */
 
 /* ABOUT US */
 

@@ -83,10 +83,6 @@ img {
 
 /* --- Кнопки-ссылки --- */
 
-.link-btn {
-   display: inline-block;
-}
-
 .btn {
    display: inline-block;
 
@@ -94,6 +90,13 @@ img {
    color: var(--bg-color);
    background-color: var(--btn-bg-color);
 }
+
+.btn-link {
+   margin-top: 30px;
+   padding: 16px 63px;
+   font-size: 18px;
+}
+
 .btn:hover,
 .btn:focus {
    background-color: var(--hover-color);
@@ -111,6 +114,7 @@ img {
    /* background-color: beige; */
 
    /* outline: 2px solid teal; */
+   outline: 1px solid blue;
 }
 
 .title {

@@ -129,34 +129,76 @@
 /* ------ */
 
 /* --- SKILLS --- */
+.skills {
+   padding-bottom: 252px;
+}
+
 .skills .container {
-   outline: 1px solid;
+   outline: 1px solid blue;
 }
 
 .skills__subtitle {
    outline: 1px solid;
 }
 
+.skills__title {
+   margin-bottom: 92px;
+}
+
 .skills__list {
-   position: relative;
+   /* position: relative;
    display: flex;
    justify-content: flex-end;
-   flex-wrap: wrap;
+   flex-wrap: wrap; */
+
+   display: grid;
    column-gap: 30px;
    row-gap: 20px;
+
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas:
+      'speaking writing reading'
+      'speaking listening listening';
 }
 
 .skills__item {
+   background-color: var(--bg-second-color);
+
    outline: 1px solid red;
 }
 
+/* === элементы SKILLS ==== */
 .speaking {
-   position: absolute;
+   grid-area: speaking;
+
+   /* position: absolute;
    width: calc((100% / 3 + 15px));
    height: 100%;
    padding-top: 36px;
    top: 0;
-   left: 0;
+   left: 0; */
+}
+
+.writing {
+   grid-area: writing;
+}
+
+.reading {
+   grid-area: reading;
+}
+
+.listening {
+   grid-area: listening;
+
+   /* display: flex;
+   flex-direction: row-reverse;
+   justify-items: flex-end;
+   flex-basis: 858px;
+   flex-grow: 0;
+   padding-top: 43px;
+   padding-right: 29px;
+   padding-bottom: 44px; */
 }
 
 .speakings__img-box {
@@ -166,34 +208,27 @@
    height: 390px;
 }
 
-.skills__item:not(:last-child) {
+/* .skills__item:not(:last-child) {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    padding-left: 18px;
-   background-color: var(--bg-second-color);
-   /* flex-basis: ; */
+
    flex-basis: calc((100% - 108px) / 3);
-}
+} */
 
 .skills__subtitle {
    line-height: 2.67;
 }
 
 .skills__txt:nth-child(3) {
-   margin-top: 24px;
-   /* background-color: green; */
+   /* margin-top: 24px;
+   background-color: green; */
 }
 
-.listening {
-   display: flex;
-   flex-direction: row-reverse;
-   justify-items: flex-end;
-   flex-basis: 858px;
-   flex-grow: 0;
-   padding-top: 43px;
-   padding-right: 29px;
-   padding-bottom: 44px;
+.skills__txt + .skills__txt {
+   margin-top: 24px;
+   background-color: green;
 }
 
 .listening__dscr-box {
@@ -219,30 +254,10 @@
    margin-bottom: 36px;
 }
 
-.skills {
-   padding-bottom: 252px;
-}
-.skills__title {
-   margin-bottom: 92px;
-}
-
-.skils-item {
-   background-color: var(--bg-second-color);
-}
-.pretitle {
-   font-weight: 600;
-   font-size: 30px;
-   /* identical to box height */
-}
-
 .skills__btn {
    padding: 16px 63px;
    font-size: 18px;
 }
-/* .learn {
-   display: flex;
-   justify-content: center;
-} */
 
 /* ABOUT US */
 

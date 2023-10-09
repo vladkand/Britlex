@@ -91,10 +91,8 @@
 }
 
 .hero__descr {
-   padding-top: 51px;
-   /* margin-right: 163px; */
-   flex-basis: 50%;
-   padding-right: 163px;
+   align-self: flex-end;
+   padding-top: 61px;
 }
 
 .hero__title {
@@ -115,8 +113,10 @@
 }
 
 .hero__thumb {
-   width: 653px;
-   height: 642px;
+   margin-left: 163px;
+   /* width: 653px; */
+   /* height: 642px; */
+   flex-shrink: 0;
 }
 
 .hero__btn {
@@ -138,7 +138,7 @@
 }
 
 .skills__subtitle {
-   outline: 1px solid;
+   /* outline: 1px solid; */
 }
 
 .skills__subtitle {
@@ -174,16 +174,17 @@
    padding-left: 18px;
    background-color: var(--bg-second-color);
 
+   border-radius: 10px;
    outline: 1px solid red;
 }
 
 .skills__thumb {
    width: 100%;
 
-   background-color: #ccc;
+   /* background-color: #ccc; */
 }
 .skills__thumb img {
-   background-color: #ffc1c1;
+   /* background-color: #ffc1c1; */
 }
 
 .btn-link {
@@ -276,7 +277,6 @@
    padding-top: 44px;
    padding-left: 30px;
    justify-items: right;
-   background-color: #ccc;
 }
 
 .listening__dscr-box {
@@ -284,7 +284,7 @@
    /*  */
    padding-top: 53px;
    padding-right: 92px;
-   outline: 1px solid teal;
+   /* outline: 1px solid teal; */
 }
 
 /* === элементы SKILLS ==== */

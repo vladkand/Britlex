@@ -141,6 +141,20 @@
    outline: 1px solid;
 }
 
+.skills__subtitle {
+   line-height: 2.67;
+}
+
+.skills__txt {
+   font-size: 16px;
+   line-height: normal;
+}
+
+.skills__txt + .skills__txt {
+   margin-top: 24px;
+   background-color: rgba(78, 146, 223, 0.288);
+}
+
 .skills__list {
    margin-top: 92px;
 
@@ -148,7 +162,7 @@
    column-gap: 30px;
    row-gap: 20px;
 
-   /* grid-template-columns: repeat(3, 1fr); */
+   grid-template-columns: repeat(3, 1fr);
    /* grid-template-rows: repeat(2, 1fr); */
    grid-template-areas:
       'speaking writing reading'
@@ -163,20 +177,81 @@
    outline: 1px solid red;
 }
 
+.skills__thumb {
+   width: 100%;
+
+   background-color: #ccc;
+}
+.skills__thumb img {
+   background-color: #ffc1c1;
+}
+
+.btn-link {
+   margin-top: 20px;
+   padding: 16px 63px 17px;
+   font-size: 18px;
+}
+
+/* speaking */
+
 .speaking {
    grid-area: speaking;
 
    padding-top: 35px;
 }
 
-.writing {
-   grid-area: writing;
+.speakings__thumb {
+   /* margin-left: auto; */
+   /* margin-right: auto; */
+   /* width: 100%; */
+   /* height: 390px; */
 }
 
+.speakings__thumb img {
+   /* display: block; */
+   /* height: 100%; */
+   /* width: 100%; */
+
+   /* object-fit: scale-down; */
+   /* object-position: left top; */
+}
+
+.speaking__dscr-box {
+   margin-top: 4px;
+   padding-right: 58px;
+}
+
+.speaking__btn {
+   margin-top: 50px;
+}
+
+/* Writing */
+
+.writing {
+   grid-area: writing;
+
+   padding-bottom: 44px;
+}
+
+.writing__thumb {
+   padding-left: 118px;
+}
+
+.writing__dscr-box {
+   padding-right: 51px;
+}
+
+/* Reading */
 .reading {
    grid-area: reading;
 }
 
+.reading__dscr-box {
+   margin-top: 9px;
+   padding-right: 37px;
+}
+
+/* Listening */
 .listening {
    grid-area: listening;
 
@@ -198,106 +273,23 @@
    /* margin-left: auto; */
    /* width: 100%; */
    /* height: 100%; */
-   /* padding-top: 44px; */
-   /* padding-left: 30px; */
+   padding-top: 44px;
+   padding-left: 30px;
+   justify-items: right;
    background-color: #ccc;
 }
 
 .listening__dscr-box {
    grid-area: grid-descr;
    /*  */
-   /* padding-top: 53px; */
-   /* padding-right: 77px; */
+   padding-top: 53px;
+   padding-right: 92px;
    outline: 1px solid teal;
 }
 
 /* === элементы SKILLS ==== */
-.thumb img {
-   outline: 1px solid;
-}
-
-.skills__subtitle {
-   line-height: 2.67;
-}
-
-.skills__txt {
-   font-size: 16px;
-   line-height: normal;
-}
-
-/* speaking */
-
-.speakings__thumb {
-   /* margin-left: auto; */
-   /* margin-right: auto; */
-   width: 100%;
-   height: 390px;
-}
-
-.speakings__thumb img {
-   display: block;
-   height: 100%;
-   width: 100%;
-
-   object-fit: scale-down;
-   object-position: left top;
-}
-
-.speaking__dscr-box {
-   margin-top: 4px;
-   padding-right: 58px;
-}
-
-.skills__txt + .skills__txt {
-   margin-top: 24px;
-   background-color: green;
-}
-
-.speaking__btn {
-   margin-top: 50px;
-}
-
-/* Writing */
-.writing {
-   padding-bottom: 44px;
-}
-.writing__thumb {
-   /*  */
-   width: 100%;
-   height: 255px;
-   /* padding-left: 118px; */
-}
-
-.writing__thumb img {
-   width: 100%;
-   object-fit: scale-down;
-   object-position: right top;
-}
-
-.writing__dscr-box {
-   padding-right: 51px;
-}
-
-/* Reading */
-.reading__thumb {
-   width: 100%;
-   height: 247px;
-}
-
-.reading__thumb img {
-   width: 100%;
-   height: 100%;
-   object-fit: scale-down;
-   object-position: left top;
-}
-
-.reading__dscr-box {
-   margin-top: 8px;
-}
 
 /*  */
-
-/* Listening */
 
 /*  */
 
